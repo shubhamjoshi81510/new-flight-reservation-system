@@ -6,4 +6,6 @@ import FlightReservation.System.Flight.Reservation.System.model.FlightBookingCre
 public interface FlightBookingService {
 
     FlightBookingDetails createBooking(FlightBookingCreateReq req);
+
+
 }

@@ -1,9 +1,6 @@
 package FlightReservation.System.Flight.Reservation.System.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
 import lombok.ToString;
 
@@ -14,7 +11,7 @@ import java.time.LocalDateTime;
 @Data
 @Table(name = "flightSchedule")
 public class FlightSchedule {
-
+    @Id
     @Column(name = "id")
     private String id;
 

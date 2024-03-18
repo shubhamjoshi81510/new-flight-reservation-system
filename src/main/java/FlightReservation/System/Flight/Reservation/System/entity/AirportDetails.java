@@ -2,6 +2,7 @@ package FlightReservation.System.Flight.Reservation.System.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Data;
 import lombok.ToString;
@@ -14,7 +15,7 @@ import java.time.LocalDateTime;
 @ToString
 @Table(name = "airportDetails")
 public class AirportDetails {
-
+    @Id
     @Column(name = "airport_tId")
     private String airportId;
 

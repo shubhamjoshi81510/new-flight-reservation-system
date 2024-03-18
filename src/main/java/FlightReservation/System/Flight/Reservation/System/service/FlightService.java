@@ -7,7 +7,7 @@ public interface FlightService {
 
     FlightDetails createFlight(FlightCreateUpdateReq req);
 
-    FlightDetails updateFlight(FlightCreateUpdateReq req);
+    FlightDetails updateFlight(FlightCreateUpdateReq req,String userId);
 
-    FlightDetails deleteFlight(FlightCreateUpdateReq req);
+    void deleteFlight(String flightId);
 }
