@@ -15,25 +15,25 @@ import java.time.LocalDateTime;
 @Table(name = "pilotDetails")
 public class PilotDetails {
     @Id
-    @Column(name = "pilotId")
+    @Column(name = "pilot_Id")
     private String pilotId;
 
     @Column(name = "name")
     private String name;
 
-    @Column(name = "activestatus")
+    @Column(name = "active_status")
     private String activeStatus;
 
-    @Column(name = "createdAt")
+    @Column(name = "created_At")
     private LocalDateTime createdAt;
 
-    @Column(name = "createdBy")
+    @Column(name = "created_By")
     private String createdBy;
 
-    @Column(name = "updatedAt")
+    @Column(name = "updated_At")
     private LocalDateTime updatedAt;
 
-    @Column(name = "updatedBy")
+    @Column(name = "updated_By")
     private String updatedBy;
 
 

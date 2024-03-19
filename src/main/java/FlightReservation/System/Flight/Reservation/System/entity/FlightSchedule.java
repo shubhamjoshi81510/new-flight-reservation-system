@@ -16,7 +16,7 @@ public class FlightSchedule {
     private String id;
 
 
-    @JoinColumn(name = "fligt_Id")
+    @JoinColumn(name = "flight_Id")
     private FlightDetails flightId;
 
     @JoinColumn(name = "pilot_Id")
@@ -26,14 +26,14 @@ public class FlightSchedule {
     private LocalDateTime journey_Start_Date;
 
 
-    @JoinColumn(name="source_airport_id")
+    @JoinColumn(name="airport_Id")
     private AirportDetails sourceAirport;
 
     @Column(name="journey_end_date")
     private LocalDateTime journeyEndDate;
 
 
-    @JoinColumn(name="dest_airport_id")
+    @JoinColumn(name="airport_Id")
     private AirportDetails destAirport;
 
     @Column(name="max_waiting_capacity")

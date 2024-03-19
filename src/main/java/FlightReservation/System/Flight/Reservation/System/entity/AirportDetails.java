@@ -16,7 +16,7 @@ import java.time.LocalDateTime;
 @Table(name = "airportDetails")
 public class AirportDetails {
     @Id
-    @Column(name = "airport_tId")
+    @Column(name = "airport_Id")
     private String airportId;
 
     @Column(name = "name")
