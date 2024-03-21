@@ -8,8 +8,7 @@ import java.time.LocalDateTime;
 
 @Entity
 @Data
-@ToString
-@Table(name = "")
+@Table(name = "flight_booking")
 public class FlightBookingDetails {
 
     @Id

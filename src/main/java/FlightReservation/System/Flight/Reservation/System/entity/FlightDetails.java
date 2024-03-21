@@ -12,12 +12,11 @@ import java.time.LocalDateTime;
 
 @Entity
 @Data
-@ToString
-@Table(name = "flightDetails")
+@Table(name = "flight_details")
 public class FlightDetails {
     @Id
-    @Column(name = "flight_Id")
-    private String flightId;
+    @Column(name = "flight_id")
+    private String flight_id;
 
     @Column(name = "name")
     private String name;
@@ -25,20 +24,20 @@ public class FlightDetails {
     @Column(name = "capacity")
     private String capacity;
 
-    @Column(name = "active_Status")
-    private String activeStatus;
+    @Column(name = "active_status")
+    private String active_status;
 
-    @Column(name = "created_At")
-    private LocalDateTime createdAt;
+    @Column(name = "created_at")
+    private LocalDateTime created_at;
 
-    @Column(name = "created_By")
-    private String createdBy;
+    @Column(name = "created_by")
+    private String created_by;
 
-    @Column(name = "updated_At")
-    private LocalDateTime updatedAt;
+    @Column(name = "updated_at")
+    private LocalDateTime updated_at;
 
-    @Column(name = "updated_By")
-    private String updatedBy;
+    @Column(name = "updated_by")
+    private String updated_by;
 
 
 }

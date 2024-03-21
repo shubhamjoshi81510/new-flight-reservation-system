@@ -7,7 +7,6 @@ import lombok.ToString;
 import java.time.LocalDateTime;
 
 @Entity
-@ToString
 @Data
 @Table(name = "flightSchedule")
 public class FlightSchedule {

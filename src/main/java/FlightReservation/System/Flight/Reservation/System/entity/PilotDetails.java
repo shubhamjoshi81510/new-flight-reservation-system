@@ -10,33 +10,29 @@ import lombok.ToString;
 import java.time.LocalDateTime;
 
 @Entity
-@ToString
 @Data
 @Table(name = "pilotDetails")
 public class PilotDetails {
     @Id
-    @Column(name = "pilot_Id")
-    private String pilotId;
+    @Column(name = "pilot_id")
+    private String pilot_id;
 
     @Column(name = "name")
     private String name;
 
     @Column(name = "active_status")
-    private String activeStatus;
+    private String active_status;
 
-    @Column(name = "created_At")
-    private LocalDateTime createdAt;
+    @Column(name = "created_at")
+    private LocalDateTime created_at;
 
-    @Column(name = "created_By")
-    private String createdBy;
+    @Column(name = "created_by")
+    private String created_by;
 
-    @Column(name = "updated_At")
-    private LocalDateTime updatedAt;
+    @Column(name = "updated_at")
+    private LocalDateTime updated_at;
 
-    @Column(name = "updated_By")
-    private String updatedBy;
-
-
-
+    @Column(name = "updated_by")
+    private String updated_by;
 
 }
